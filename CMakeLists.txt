@@ -12,5 +12,4 @@ if (WIN32)
     add_library(neon_win32 SHARED
         win32.cpp
     )
-    target_include_directories(neon_win32 PRIVATE ../../common)
 endif ()
