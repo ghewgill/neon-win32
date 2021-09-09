@@ -61,7 +61,7 @@ Ne_FUNC(Ne_FindFirstFile)
     WIN32_FIND_DATA fd;
     HANDLE r = FindFirstFile(lpFileName.c_str(), &fd);
     if (r == INVALID_HANDLE_VALUE) {
-	Ne_RETURN_POINTER(r);
+        Ne_RETURN_POINTER(r);
     }
     marshal_to_neon(Ne_OUT_PARAM(0), fd);
 
