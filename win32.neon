@@ -3,7 +3,7 @@
  *  Win32 API access functions.
  */
 
-EXPORT TYPE Handle IS POINTER
+EXPORT TYPE Handle IS Object
 
 EXPORT TYPE WIN32_FIND_DATA IS RECORD
     dwFileAttributes: Number
